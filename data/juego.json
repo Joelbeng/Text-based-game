@@ -1,0 +1,162 @@
+{
+  "nombreDelJuego": "De Vacaciones",
+  "inicio": "Luego de tanto esfuerzo pudiste lograrlo, estás en España, el lugar que tanto querías conocer.\nActualmente estás alquilando una habitación hace 4 días en Sevilla, conviviendo con el dueño del\nlugar (Marco), quién resultó ser una gran compañía por ahora. Hoy estuviste\ncon él bebiendo desde que el sol comenzó a caer, primero en un bar y ahora en el departamento.\n\nEn este instante, estás con la mirada perdida sobre un poster ubicado en el pasillo, mientras\nfumas tu cigarrillo número... ya no podés seguir la cuenta. Mientras tanto, Marco te\nestá hablando, quejándose de que mañana debería limpiar el lugar y algo más, pero vos no le estás\nprestando atención. Apagas el cigarrillo enérgicamente en el cenizero que está en\nla mesa, provocando que este se vuelque esparciendo así todas las colillas y cenizas que\neste contenía. Marco se enoja por esto, pero vos te reís e intentas juntar las colillas y...\nTe despertas repentinamente en la cama, sin recordar cuando fue que te acostaste.\nSe te parte la cabeza. Intentas seguir durmiendo pero entre el calor y el malestar, se te hace imposible.",
+  "checkpoint1": false,
+  "checkpoint2": false,
+  "habitaciones":[
+    {
+      "id": 1,
+      "descripcion": "Te encontrás en la habitación que estás alquilando. Al norte está el pasillo del departamento",
+      "norte": 2,
+      "objetos": [
+        {
+          "nombre":"ropa",
+          "descripcion1":"Notas una mancha de vino en la ropa que usaste ayer. 'Pensé que solo había tomado cerveza'.",
+          "descripcion2":"Esto no es vino, esto es... sangre.",
+          "interaccion1":"'No me voy a poner esa ropa'.",
+          "interaccion2":"'Ahora que sé lo que es esa mancha, nunca más la voy a usar'."
+        },
+        {
+          "nombre":"bolso",
+          "descripcion1":"'Me parece que exageré con la cantidad de ropa que traje, siempre hago lo mismo'.",
+          "descripcion2":"'Menos mal que tenía algo limpio para ponerme'.",
+          "interaccion1":"Buscas una remera limpia en el bolso, y te la pones.",
+          "interaccion2":"'Ya me puse ropa limpia, no me voy a cambiar de vuelta'."
+        },
+        {
+          "nombre":"celular",
+          "descripcion1":"'¿Qué hora será? Me olvidé de pedirle prestado el cargador ayer a Marco'.",
+          "descripcion2":"'Ya tomé la decisión, no tengo nada más que hacer con el celular'.",
+          "interaccion1":"'No puedo usarlo está sin batería'.",
+          "interaccion2":"Ponés a cargar el celular y lo prendés. Es momento de tomar la decisión más\nimportante de tu vida. 'Ahora que el celular está cargando, ¿Qué hago? ¿Llamo a la policía?'"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "descripcion":"Te encontras en el pasillo del departamento, decorado solo por un poster gastado\nde Star Wars. Al norte se encuentra el cuarto del dueño, al este el baño, al\nsur tu cuarto y al oeste el comedor.",
+      "norte": 3,
+      "este": 6,
+      "sur": 1,
+      "oeste": 4,
+      "objetos": [
+        {
+          "nombre":"poster",
+          "descripcion1":"'Nunca me gustó mucho Star Wars la verdad'.",
+          "descripcion2":"'Bienvenido al lado oscuro' dice el cuadro con la cara de Darth Vader.",
+          "interaccion1":"'No puedo hacer nada con el poster'.",
+          "interaccion2": "'No puedo hacer otra cosa que observarlo'."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "descripcion": "Te encontrás en el cuarto del dueño, Marco. Está bastante desordenado para tu\ngusto, ropa tirada y mucho polvo por todos lados... Al sur está el pasillo.",
+      "descripcionBloqueada":"No podes entrar al cuarto de Marco, se encuentra cerrado con llave. 'Qué desconfiado'.",
+      "bloqueada": true,
+      "sur": 2,
+      "objetos": [
+        {
+          "nombre":"guitarra",
+          "descripcion1":"Es una guitarra acústica Fender. Se ve impecable y por esta razón contrasta con\nla habitación. 'Es hermosa nunca me la mostró Marco'.",
+          "descripcion2":"'Yo siempre quise una guitarra así'.",
+          "interaccion1":"'No me voy a poner a tocar ahora'.",
+          "interaccion2":"A pesar del momento que estás pasando, agarras la guitarra y tocas con mucha\nenergía porque necesitas distenderte aunque sea por un momento."
+        },
+        {
+          "nombre":"mesita",
+          "descripcion1": "Sobre esta mesita de luz hay un cenicero de madera repleto de colillas. A su\nlado se encuentra el cargador de Marco.",
+          "descripcion2": "Sólo queda el cenicero sobre la mesita.",
+          "interaccion1":"Agarras el cargador que se encuentra apoyado sobre la mesita de luz de Marco.",
+          "interaccion2": "Ya no hay nada más acá.",
+          "nCheckpoint": 3
+        },
+        {
+          "nombre": "cajon",
+          "descripcion1": "Es un cajón que se encuentra ligeramente abierto.",
+          "descripcion2": "Es un cajón que se encuentra ligeramente abierto.",
+          "interaccion1": "Abrís el cajón y encontrás una llave. La agarras.",
+          "interaccion2": "Hay una caja de cigarrillos. La abrís con esperanzas, pero no hay nada.\n'Me hubiera venido bien un cigarrillo en este momento'.",
+          "nCheckpoint": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "descripcion": "Te encontras en el comedor. Al este está el pasillo, al sur la puerta principal\ny al oeste la cocina",
+      "este": 2,
+      "sur": 7,
+      "oeste": 5,
+      "objetos": [
+        {
+          "nombre":"cuaderno",
+          "descripcion1":"Es un cuaderno común y corriente que se encuentra sobre la mesita ratona.",
+          "descripcion2":"Es un cuaderno común y corriente que se encuentra sobre la mesita ratona.",
+          "interaccion1":"Abris el cuaderno y ves que Marco lo usa para hacer un seguimiento de todas\nlas personas que estuvieron alquilando. Aparece tu nombre con la fecha\nen que llegaste, y debajo, el nombre de otra persona que parece que va a llegar mañana.",
+          "interaccion2":"Lees el cuaderno que usa Marco para organizarse con los inquilinos:\n'Lautaro Navas - 16/1'. Hoy es 15/1. 'Mañana llega esta persona, tengo que\nirme o hacer algo con todo esto'."
+        },
+        {
+          "nombre":"mesa",
+          "descripcion1":"Ves todas las botellas vacías sobre la mesa, y cenizas esparcidas también.\nTenés un vago recuerdo de haber volcado el cenizero ayer y que Marco\nse había enojado.'Que desastre que dejamos. Cuando se levante Marco limpio, ahora\nno me siento tan bien.'",
+          "descripcion2":"Ves todas las botellas vacías'¡¿Por qué tomé tanto?! Dios, ahora estoy\nmetido en el lío más grande de mi vida.'",
+          "interaccion1":"No voy a limpiar ahora.",
+          "interaccion2":"'No voy a limpiar, voy a dejar todo tal como está para que vean lo\nmucho que tomó y que pudo haberse accidentado solo.\nCreo y espero que haya pasado eso.'"
+        },
+        {
+         "nombre":"adorno",
+         "descripcion1":"Es un robot de Star Wars en miniatura.'¿Cómo se llamaba este robot...? Arturito!'",
+         "descripcion2":"Al ver el adorno de Star Wars recordas que tan solo ayer por la tarde él te\ncontaba sobre esta saga con mucho entusiasmo, y hoy... ya no está más.\n'No me puede estar pasando esto'.",
+         "interaccion1":"Cuando agaras el mini Arturito notas un ruido como si hubiera algo.\nLo inspeccionas y notas que la parte de arriba se puede abrir a rosca.\nGiras y giras hasta que logras sacarle la parte superior del robot.\nObservás que dentro hay una llave. La agarras.",
+         "interaccion2":"Volvés a agarar este adorno para revisarlo. 'No hay nada más dentro de Arturito'.",
+         "nCheckpoint":2,
+         "checkpointActivo":false
+        }
+      ]
+    },
+    {
+      "id":5,
+      "descripcion":"Te encontrás en la cocina. Ves a Marco tirado en el piso con sangre a su alrededor.\nAl Este se encuentra el comedor.",
+      "este":4,
+      "objetos": [
+        {
+          "nombre":"cuerpo",
+          "descripcion1":"'Dios mío, ¿Qué pasó?¿Cuándo pasó esto?' Marco se encuentra boca abajo con una\ncantidad considerable de sangre a su alrededor. '¿Estará vivo?'",
+          "descripcion2":"'Prefiero no volver a verlo'.",
+          "interaccion1":"Primero te acercas lentamente a escuchar si respira, pero no hay respuesta...\nLuego le tomas el puso (torpemente) primero desde su muñeca, y finalmente desde el cuello.\nNada. 'Creo que ... está muerto'.",
+          "interaccion2": "'No hay nada que hacer. Ya está... muerto'."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "descripcion":"Te encontrás en el baño. Al Oeste está el pasillo.",
+      "oeste": 2,
+      "objetos": [
+        {
+          "nombre":"inodoro",
+          "descripcion1":"'Se ve limpio y no hay olor a vómito, así que no terminamos tan mal parece'.",
+          "descripcion2":"'No debería hacerlo. Con los nervios que tengo, sólo con observar\nel inodoro ya vomitaría'.",
+          "interaccion1":"Usas el inodoro para hacer tus necesidades, luego tiras la cadena.",
+          "interaccion2":"'No necesito de usar el baño'."
+        },
+        {
+          "nombre":"lavamano",
+          "descripcion1":"Se pueden ver varios pelos de barba sobre el lavamano. 'Ayer Marco se afeitó y\ndejó todos sus pelos tirados. No sé si tengo la confianza suficiente para decirle que lo limpie'.",
+          "descripcion2":"Te miras al espejo que está sobre el lavamano. Nunca te viste tan pálido como ahora. 'No puedo ni\nmirarme al espejo, ¿Soy capaz de hacer algo así?'",
+          "interaccion1":"Te lavas la cara.",
+          "interaccion2":"Te mojas la cara para intentar despejarte un poco y pensar."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "descripcion":"Abriste la puerta principal, dejando atrás el calvario.",
+      "descripcionBloqueada":"La puerta principal también está cerrada. 'Me dejó encerrado acá'.",
+      "bloqueada": true,
+      "objetos": []
+    }
+  ],
+
+  "final1":"Pudiste salir del lugar, con suerte nadie te vio. 'Tengo que irme ya de este país, si\nes que no quiero ir preso.'Tus vacaciones se terminaron, y no de la mejor manera.\nAhora solo queda lidiar con la culpa, y la duda de nunca saber qué paso esa noche.",
+  "final2":"Luego de unos minutos la policía llegó. Te interrogaron, colaboraste con todo lo que\nte pidieron, y quedaste a la espera de un veredicto final. Fuiste declarado culpable y tenés\n que cumplir una pena de solo de 5 años, dado que te entregaste y estabas\nbajo los efectos del alcohol. Sabes que hiciste lo correcto, y a lo largo del tiempo\nvas a poder librarte de la culpa."
+}
