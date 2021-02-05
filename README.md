@@ -42,3 +42,9 @@ Acciones válidas:
 ### Librerías externas utilizadas:
 
 json-simple-1.1
+
+### Aclaraciones:
+
+_ Dentro de la carpeta "data" se encontraran con dos archivos json. Ambos describen la misma aventura del juego, aunque uno de ellos (juegoCMD.json) no contiene caracteres especiales para que pueda ser interpretado por la consola de comando de Windows sin problema.
+
+_ Dentro del paquete "objetos" existe un paquete denominado "deVacaciones". Dentro del mismo hay una clase que representa un objeto propio de esta historia. Si se quiere reescribir la aventura se puede prescindir de este paquete. 
