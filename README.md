@@ -1,5 +1,7 @@
 # "De Vacaciones" - Escape Room Game :video_game: :book:
-Este es un motor de juego de aventura de texto hecho en Java. La definción de la aventura se encuentra escrita en un archivo .json, lo que permite que cualquier persona pueda redefinir la historia sin tener que retocar el programa.
+Este es un motor de juego de aventura de texto hecho en Java. La definción de la aventura se encuentra escrita en un archivo .json, lo que permite que cualquier persona pueda redefinir la trama sin tener que retocar el programa.
+
+En esta historia, una situación inesperada hará que debas hacer lo posible para salir del lugar. Los objetos de cada lugar te ayudarán a lograrlo y las decisiones que tomes serán importantes.
 
 Trabajo presentado para el final de la materia "Paradigmas de Programación" del I.F.T.S. n° 16.
 
@@ -17,11 +19,25 @@ Se puede correr desde la consola de comandos de Windows de la siguiente manera:
 4.  Escribir el comando "java -jar Juego.jar".  
 5.  Jugar!
 
-Es posible también correrlo desde un IDE, como Intellij, a partir la clase main Juego.java
-
-### Trama 
+Es posible también correrlo desde un IDE (como Intellij) a partir la clase main Juego.java, la cual se encuentra en la carpeta "src".
 
 ### Comandos para jugar: 
+
+Para jugar debes escribir en la consola alguna de las acciones válidas, seguidas por una dirección (si te movés) o por un objeto.
+
+Direcciones válidas: 
+- "norte"
+- "este"
+- "sur" 
+- "oeste"
+
+Objetos válidos: son los que se muestran por consola.
+
+Acciones válidas: 
+
+- "ir" : con esta acción te vas a desplazar de una habitación a otra. Luego de la acción se debe indicar la dirección.
+- "ob" (observar): con esta acción vas a obtener una descripción del objeto elegido.
+- "in" (interactuar): con esta acción el personaje va a realizar algo (o no) con el objeto que elije el usuario.
 
 ### Librerías externas utilizadas:
 
