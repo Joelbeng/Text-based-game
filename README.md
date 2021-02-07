@@ -23,7 +23,7 @@ Es posible también correrlo desde un IDE (como Intellij) a partir la clase main
 
 ### Comandos para jugar: 
 
-Para jugar debes escribir en la consola alguna de las acciones válidas, seguidas por una dirección (si te movés) o por un objeto.
+Se debe escribir en la consola alguna de las acciones válidas, seguidas por una dirección (si te movés) o por un objeto.
 
 Direcciones válidas: 
 - "norte"
